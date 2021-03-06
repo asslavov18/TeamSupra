@@ -11,7 +11,16 @@ struct STUDENT
     string email;
     void askForData();
 };
-vector<STUDENT> students;
+
+
+
+vector<STUDENT> students = {
+{ "Michael", "Watts", "10V", "front end", "michawatts@gmail.com" },
+{ "Zachary", "Dennis", "12B", "back end", "zachdennis@hotmail.com" },
+{ "Kawhi", "Leonard", "11A", "scrum master", "kawhleonard@yahoo.com" },
+{ "Susan", "Hamilton", "11G", "qa", "susahamilton@outlook.com" },
+};;
+
 
 
 void STUDENT::askForData()

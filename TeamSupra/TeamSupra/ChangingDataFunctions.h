@@ -35,3 +35,15 @@ void removeStudentByEmail()
     string email;
     students.erase(students.begin() + searchByEmail());
 }
+
+void showAllStudents()
+{
+    for (size_t i = 0; i < students.size(); i++)
+    {
+        cout << students[i].name << " " << students[i].surname << endl;
+        cout << "schoolClass: " << students[i].schoolClass << endl;
+        cout << "role: " << students[i].role << endl;
+        cout << "email: " << students[i].email << endl;
+        if (i != students.size() - 1) cout << "-------------------" << endl;
+    }
+}
