@@ -142,6 +142,7 @@
     <ClCompile Include="TeamSupra.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ChangingDataFunctions.h" />
     <ClInclude Include="DataTypes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

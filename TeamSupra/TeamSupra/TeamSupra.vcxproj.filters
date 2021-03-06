@@ -23,5 +23,8 @@
     <ClInclude Include="DataTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ChangingDataFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

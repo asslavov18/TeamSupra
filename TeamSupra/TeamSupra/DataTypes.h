@@ -1,38 +1,62 @@
 #pragma once
 #include<string>
 #include<vector>
+using namespace std;
 struct STUDENT
 {
-    std::string name;
-    std::string surname;
-    std::string schoolClass;
-    std::string role;
-    std::string email;
+    string name;
+    string surname;
+    string schoolClass;
+    string role;
+    string email;
+    void askForData();
 };
+vector<STUDENT> students;
+
+
+void STUDENT::askForData()
+{
+    cout << "Input name: ";
+    cin >> name;
+    cout << "Input surname: ";
+    cin >> surname;
+    cout << "Input schoolClass: ";
+    cin >> schoolClass;
+    cout << "Input role: ";
+    cin >> role;
+    cout << "Input email: ";
+    cin >> email;
+}
+
+
+
 
 struct TEAM
 {
-    std::string name;
-    std::string description;
-    std::string date;
-    std::string status;
-    std::vector<STUDENT> students;
+    string name;
+    string description;
+    string date;
+    string status;
+    vector<STUDENT> students;
 };
+vector<TEAM> teams;
+
 
 struct TEACHER
 {
-    std::string name;
-    std::string surname;
-    std::string email;
-    std::vector<TEAM> teams;
+    string name;
+    string surname;
+    string email;
+    vector<TEAM> teams;
 };
+vector<TEACHER> teachers;
 
 struct SCHOOL
 {
-    std::string name;
-    std::string city;
-    std::string address;
-    std::vector<TEACHER> teachers;
-    std::vector<TEAM> teams;
-    std::vector<STUDENT> students;
+    string name;
+    string city;
+    string address;
+    vector<TEACHER> teachers;
+    vector<TEAM> teams;
+    vector<STUDENT> students;
 };
