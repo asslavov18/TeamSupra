@@ -7,6 +7,7 @@ using namespace std;
 
 void showMenuOptions()
 {
+    //clears the console
     system("cls");
     cout << "------------WELCOME TO TEAM SUPRA'S PROJECT------------" << endl;
     cout << "Select an option" << endl;
@@ -24,6 +25,7 @@ bool Menu()
     int choice;
     showMenuOptions();
     cin >> choice;
+    //We call the corresponding function for the choice
     if (choice == 1)
     {
         system("cls");
@@ -58,13 +60,14 @@ bool Menu()
     else
     {
         cout << "Input a valid choice!" << endl;
-        return false;
     }
+    //If the choice is not 0 or invalid the Menu function is called again
     return true;
 }
 
 int main()
 {
+    //We leave the while only when 0 is entered and false is returned
     while (Menu())
     {
         ;

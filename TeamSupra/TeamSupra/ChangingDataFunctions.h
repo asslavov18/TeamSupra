@@ -4,11 +4,21 @@
 #include "DataTypes.h"
 using namespace std;
 
+
+void pressAnyKey()
+{
+    cout << '\n' << "Press any key to continue...";
+    _getch();
+}
+
+
 void addStudent()
 {
     STUDENT student;
     student.askForData();
     students.push_back(student);
+    cout << endl << "Successfully added new student" << endl;
+    pressAnyKey();
 }
 
 void addTeam()
@@ -25,13 +35,6 @@ void addTeacher()
     teachers.push_back(teacher);
 }
 
-
-
-void pressAnyKey()
-{
-    cout << '\n' << "Press a key to continue...";
-    _getch();
-}
 
 void showAllStudents()
 {
@@ -50,6 +53,8 @@ int searchByEmail()
 {
     showAllStudents();
     string email;
+    //the user is asked to enter a email until they enter a valid one
+    //the user with this email is then deleted in the removeStudentByEmail function
     do
     {
         cout << endl << "Enter the email of the student that you want to delete: ";
@@ -70,7 +75,11 @@ int searchByEmail()
 void removeStudentByEmail()
 {
     string email;
+    //search by email returns the index of the searched student
+    //we use that index to delete the said student
     students.erase(students.begin() + searchByEmail());
+    cout << endl << "Successfully removed student" << endl;
+    pressAnyKey();
 }
 
 
@@ -87,8 +96,10 @@ vector<TEAM> searchTeamsByNames()
     vector<TEAM> foundTeams;
     string teamName;
     bool found;
+    cout << "Here are the names of all existing teams:" << endl;
     showAllTeamNames();
-    cout << "Enter the names of the teams you want to teach" << endl;
+    cout << "Enter the names of the teams you want to teach(-1 to leave)" << endl;
+    //the user enters a string until they enter an existing team name
     do
     {
         cin >> teamName;
@@ -97,8 +108,10 @@ vector<TEAM> searchTeamsByNames()
         {
             if (teams[i].name == teamName)
             {
+                //we then add the existing team name to the vector of the teams
+                //that the current teacher consults
                 foundTeams.push_back(teams[i]);
-                cout << "Successfully added this team" << endl << endl;
+                cout << "Successfully added this team" << endl;
                 found = 1;
             }
         }

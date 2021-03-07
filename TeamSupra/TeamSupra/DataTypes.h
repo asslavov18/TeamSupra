@@ -14,7 +14,7 @@ struct STUDENT
     void askForData();
 };
 
-
+//a list of students used for testing the functionality of the program
 vector<STUDENT> students = {
 {0, "Michael", "Watts", "10V", "front end", "michawatts@gmail.com" },
 {1, "Zachary", "Dennis", "12B", "back end", "zachdennis@hotmail.com" },
