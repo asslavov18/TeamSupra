@@ -1,5 +1,6 @@
 #pragma once
 #include<conio.h>
+#include <fstream>
 #include<iostream>
 #include "DataTypes.h"
 using namespace std;

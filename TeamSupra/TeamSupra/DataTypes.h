@@ -1,6 +1,8 @@
 #pragma once
 #include<string>
 #include<vector>
+#include<conio.h>
+#include <fstream>
 using namespace std;
 
 struct STUDENT
@@ -12,6 +14,7 @@ struct STUDENT
     string role;
     string email;
     void askForData();
+    void AddStudentToFile();
 };
 
 //a list of students used for testing the functionality of the program
@@ -58,6 +61,7 @@ struct TEACHER
     string email;
     vector<TEAM> taughtTeams;
     void askForData();
+    void AddTeacherToFile();
 };
 vector<TEACHER> teachers;
 

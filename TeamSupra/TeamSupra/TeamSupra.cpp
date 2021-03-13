@@ -1,5 +1,7 @@
 #include <iostream>
 #include<vector>
+#include<conio.h>
+#include <fstream>
 #include "DataTypes.h"
 #include "Methods.h"
 #include "ChangingDataFunctions.h"

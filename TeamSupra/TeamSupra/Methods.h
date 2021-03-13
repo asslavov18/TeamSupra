@@ -1,5 +1,7 @@
 #pragma once
 #include<iostream>
+#include<conio.h>
+#include <fstream>
 #include"DataTypes.h"
 #include"ChangingDataFunctions.h"
 using namespace std;
@@ -17,6 +19,19 @@ void STUDENT::askForData()
     cout << "Input email: ";
     cin >> email;
     id = students[students.size() - 1].id + 1;
+    AddStudentToFile();
+}
+
+void STUDENT::AddStudentToFile()
+{
+    ofstream outputFile;
+    outputFile.open("SudentsFile.txt", ios::app); //using ios::app to not overwtite the iformation
+
+    if (outputFile.is_open())
+    {
+        outputFile << name << " " << surname << " | " << schoolClass << " | " << role << " | " << email << endl;
+        outputFile.close();
+    }
 }
 
 void TEAM::askForData()
@@ -52,5 +67,18 @@ void TEACHER::askForData()
     cin >> surname;
     cout << "Input email: ";
     cin >> email;
+    AddTeacherToFile();
     taughtTeams = searchTeamsByNames();
+}
+
+void TEACHER::AddTeacherToFile()
+{
+    ofstream outputFile;
+    outputFile.open("TeachersFile.txt", ios::app); //using ios::app to not overwtite the iformation
+
+    if (outputFile.is_open())
+    {
+        outputFile << name << " " << surname << " | " << email <<endl;
+        outputFile.close();
+    }
 }
