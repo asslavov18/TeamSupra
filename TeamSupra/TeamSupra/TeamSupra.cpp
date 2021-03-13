@@ -15,11 +15,12 @@ void showMenuOptions()
     cout << "Select an option" << endl;
     cout << "1. Add a student" << endl;
     cout << "2. Remove a student" << endl;
-    cout << "3. Show all students" << endl;
-    cout << "4. Show all students from StudentFile" << endl;
-    cout << "5. Add a team" << endl;
-    cout << "6. Add a teacher" << endl;
-    cout << "7. Show all Teachers" << endl;
+    cout << "3. Remove student from StudentFile" << endl;
+    cout << "4. Show all students" << endl;
+    cout << "5. Show all students from StudentFile" << endl;
+    cout << "6. Add a team" << endl;
+    cout << "7. Add a teacher" << endl;
+    cout << "8. Show all Teachers" << endl;
     cout << "0. Leave the program" << endl;
 }
 
@@ -43,28 +44,34 @@ bool Menu()
     else if (choice == 3)
     {
         system("cls");
-        showAllStudents();
+        deleteLineFromStudentFile();
         pressAnyKey();
     }
-
     else if (choice == 4)
     {
         system("cls");
-        ReadFromStudentFile();
+        showAllStudents();
         pressAnyKey();
     }
 
     else if (choice == 5)
     {
         system("cls");
+        ReadFromStudentFile();
+        pressAnyKey();
+    }
+
+    else if (choice == 6)
+    {
+        system("cls");
         addTeam();
     }
-    else if (choice == 6)
+    else if (choice == 7)
     {
         system("cls");
         addTeacher();
     }
-    else if (choice == 7)
+    else if (choice == 8)
     {
         system("cls");
         ReadFromTeacherFile();

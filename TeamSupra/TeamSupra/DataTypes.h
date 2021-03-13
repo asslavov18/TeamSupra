@@ -17,6 +17,7 @@ struct STUDENT
     void AddStudentToFile();
 };
 
+
 //a list of students used for testing the functionality of the program
 vector<STUDENT> students = {
 {0, "Michael", "Watts", "10V", "front end", "michawatts@gmail.com" },
@@ -30,7 +31,6 @@ vector<STUDENT> students = {
 
 
 
-
 struct TEAM
 {
     string name;
@@ -40,6 +40,8 @@ struct TEAM
     vector<STUDENT> members;
     void askForData();
 };
+
+
 
 vector<TEAM> teams = {
 { "KKB", "A cool team", "22/11/2020", "in use",
@@ -53,7 +55,6 @@ vector<TEAM> teams = {
 
 
 
-
 struct TEACHER
 {
     string name;
@@ -64,9 +65,6 @@ struct TEACHER
     void AddTeacherToFile();
 };
 vector<TEACHER> teachers;
-
-
-
 
 
 
