@@ -25,7 +25,7 @@ void STUDENT::askForData()
 void STUDENT::AddStudentToFile()
 {
     ofstream outputFile;
-    outputFile.open("SudentsFile.txt", ios::app); //using ios::app to not overwtite the iformation
+    outputFile.open("StudentsFile.txt", ios::app); //using ios::app to not overwtite the iformation
 
     if (outputFile.is_open())
     {

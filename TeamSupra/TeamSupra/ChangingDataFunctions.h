@@ -120,3 +120,21 @@ vector<TEAM> searchTeamsByNames()
     } while (teamName != "-1");
     return foundTeams;
 }
+
+void ReadFromStudentFile()
+{
+    ifstream readFile;
+    string line;
+
+    readFile.open("StudentsFile.txt", ios::out);
+
+    if (readFile.is_open())
+    {
+        while (!readFile.eof())
+        {
+            getline(readFile, line);
+            cout << line << endl;
+        }
+    }
+    readFile.close();
+}
