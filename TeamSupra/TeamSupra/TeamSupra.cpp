@@ -19,6 +19,7 @@ void showMenuOptions()
     cout << "4. Show all students from StudentFile" << endl;
     cout << "5. Add a team" << endl;
     cout << "6. Add a teacher" << endl;
+    cout << "7. Show all Teachers" << endl;
     cout << "0. Leave the program" << endl;
 }
 
@@ -62,6 +63,12 @@ bool Menu()
     {
         system("cls");
         addTeacher();
+    }
+    else if (choice == 7)
+    {
+        system("cls");
+        ReadFromTeacherFile();
+        pressAnyKey();
     }
     else if (choice == 0)
     {

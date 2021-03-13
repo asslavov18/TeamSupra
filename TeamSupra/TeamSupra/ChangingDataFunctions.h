@@ -138,3 +138,21 @@ void ReadFromStudentFile()
     }
     readFile.close();
 }
+
+void ReadFromTeacherFile()
+{
+    ifstream readFile;
+    string line;
+
+    readFile.open("TeachersFile.txt", ios::out);
+
+    if (readFile.is_open())
+    {
+        while (!readFile.eof())
+        {
+            getline(readFile, line);
+            cout << line << endl;
+        }
+    }
+    readFile.close();
+}
