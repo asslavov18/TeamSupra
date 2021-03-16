@@ -38,7 +38,7 @@ void STUDENT::showStudent()
 void STUDENT::addStudentToFile()
 {
     ofstream outputFile;
-    //using ios::app to not overwtite the information
+    //using ios::app to set the stream's position indicator to the end of the stream before each output operation.
     outputFile.open("StudentsFile.txt", ios::app); 
 
     if (outputFile.is_open())
@@ -100,7 +100,8 @@ void TEACHER::askForData()
 void TEACHER::addTeacherToFile()
 {
     ofstream outputFile;
-    outputFile.open("TeachersFile.txt", ios::app); //using ios::app to not overwtite the iformation
+    //using ios::app to set the stream's position indicator to the end of the stream before each output operation.
+    outputFile.open("TeachersFile.txt", ios::app);
 
     if (outputFile.is_open())
     {
