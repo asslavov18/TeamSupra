@@ -12,16 +12,18 @@ void showMenuOptions()
     //clears the console
     system("cls");
     cout << "------------WELCOME TO TEAM SUPRA'S PROJECT------------" << endl;
-    cout << "Select an option" << endl;
-    cout << "1. Add a student" << endl;
-    cout << "2. Remove a student" << endl;
-    cout << "3. Remove student from StudentFile" << endl;
-    cout << "4. Show all students" << endl;
-    cout << "5. Show all students from StudentFile" << endl;
-    cout << "6. Add a team" << endl;
-    cout << "7. Add a teacher" << endl;
-    cout << "8. Show all Teachers" << endl;
-    cout << "0. Leave the program" << endl;
+    cout << "||   Select an option:                               ||" << endl;
+    cout << "||                                                   ||" << endl;
+    cout << "||   1. Add a student                                ||" << endl;
+    cout << "||   2. Remove a student                             ||" << endl;
+    cout << "||   3. Remove student from StudentFile              ||" << endl;
+    cout << "||   4. Show all students                            ||" << endl;
+    cout << "||   5. Show all students from StudentFile           ||" << endl;
+    cout << "||   6. Add a team                                   ||" << endl;
+    cout << "||   7. Add a teacher                                ||" << endl;
+    cout << "||   8. Show all Teachers                            ||" << endl;
+    cout << "||   0. Leave the program                            ||" << endl;
+    cout << "||___________________________________________________||" << endl;
 }
 
 
