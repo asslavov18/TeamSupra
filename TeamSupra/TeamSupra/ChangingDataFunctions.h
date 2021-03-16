@@ -303,6 +303,7 @@ void TeacherMenuOptions()
         system("cls");
         addTeacher();
         break;
+        
     case 2:
 
         system("cls");
@@ -334,6 +335,18 @@ void TeamsMenuOptions()
     case 1:
         system("cls");
         addTeam();
+        break;
+    case 2:
+
+        system("cls");
+
+        pressAnyKey();
+        break;
+
+    case 3:
+        system("cls");
+
+        pressAnyKey();
         break;
 
     default:

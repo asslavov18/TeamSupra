@@ -3,6 +3,7 @@
 #include<vector>
 #include<conio.h>
 #include <fstream>
+
 using namespace std;
 
 struct STUDENT
@@ -13,6 +14,7 @@ struct STUDENT
     string schoolClass;
     string role;
     string email;
+
     void askForData();
     void AddStudentToFile();
 };

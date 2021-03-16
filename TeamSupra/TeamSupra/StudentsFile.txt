@@ -1,4 +1,7 @@
-Qvor Karakolev | 10B | front-end | YAKarakolev18@codingburgas.bg
-Georgi Kalchev | 10A | QA-engineer | GSKalchev18@codingburgas.bg
-Anton Slavov | 10V | Scrum-Trainer | ASSlavov18@codingburgas.bg
-Kaloyan Yordanov | 10G | Back-end | KAYordanov18@codingburgas.bg
+Michael Watts | 10V | front-end | michawatts@gmail.com
+Zachary Dennis | 12B | back-end | zachdennis@hotmail.com
+Kawhi Leonard | 11A | scrum master | kawhleonard@yahoo.com
+Susan Hamilton | 11G | qa | susahamilton@outlook.com
+Herman Howell | 9A | scrum master | hermhowell@outlook.com
+Harriet Mccoy | 12V | front-end | harrmccoy@gmail.com
+Angelina Cook | 10B | back-end | angecook@outlook.com

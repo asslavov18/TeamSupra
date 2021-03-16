@@ -40,7 +40,7 @@ void showTeacherMenu()
     cout << "----------------WELCOME TO TEACHER MENU----------------" << endl;
     cout << "||                                                   ||" << endl;
     cout << "||   1. Add a teacher                                ||" << endl;
-    cout << "||   2. Sholl all teachers                           ||" << endl;
+    cout << "||   2. Show all teachers                           ||" << endl;
     cout << "||   3. Remove teacher from TeacherFile              ||" << endl;
     cout << "||___________________________________________________||\n" << endl;
 }
@@ -51,6 +51,8 @@ void showTeamMenu()
     cout << "------------------WELCOME TO TEAM MENU-----------------" << endl;
     cout << "||                                                   ||" << endl;
     cout << "||   1. Add a Team                                   ||" << endl;
+    cout << "||   2. Show all Teams                               ||" << endl;
+    cout << "||   3. Delete Team                                  ||" << endl;
     cout << "||___________________________________________________||\n" << endl;
 }
 
