@@ -246,3 +246,90 @@ void deleteLineFromTeacherFile()
     cout << "Deletion successful, file after deletion :\n " << endl;
     ReadFromTeacherFile();
 }
+
+
+void StudentMenuOptions()
+{
+    int choice;
+    cout << "Enter your choice : ";
+    cin >> choice;
+
+    switch (choice)
+    {
+    case 1:
+        system("cls");
+        addStudent();
+        break;
+    case 2:
+        system("cls");
+        removeStudentByEmail();
+        break;
+    case 3:
+        system("cls");
+        deleteLineFromStudentFile();
+        pressAnyKey();
+        break;
+    case 4:
+        system("cls");
+        showAllStudents();
+        pressAnyKey();
+        break;
+    case 5:
+        system("cls");
+        cout << "List of Students:\n";
+        ReadFromStudentFile();
+        pressAnyKey();
+        break;
+    default:
+        cout << "Input a valid choice!" << endl;
+        break;
+    }
+}
+
+void TeacherMenuOptions()
+{
+    int choice;
+    cout << "Enter your choice : ";
+    cin >> choice;
+
+    switch(choice)
+    {
+    case 1:
+        system("cls");
+        addTeacher();
+        break;
+    case 2:
+        system("cls");
+        cout << "List of Teacher:\n";
+        ReadFromTeacherFile();
+        pressAnyKey();
+        break;
+    case 3:
+        system("cls");
+        deleteLineFromTeacherFile();
+        pressAnyKey();
+        break;
+    default:
+        cout << "Input a valid choice!" << endl;
+        break;
+    }
+}
+
+void TeamsMenuOptions()
+{
+    int choice;
+    cout << "Enter your choice : ";
+    cin >> choice;
+
+    switch (choice)
+    {
+    case 1:
+        system("cls");
+        addTeam();
+        break;
+
+    default:
+        cout << "Input a valid choice!" << endl;
+        break;
+    }
+}

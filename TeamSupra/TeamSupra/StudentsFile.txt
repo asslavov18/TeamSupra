@@ -1,4 +1,3 @@
-List of Students:
 Qvor Karakolev | 10B | front-end | YAKarakolev18@codingburgas.bg
 Georgi Kalchev | 10A | QA-engineer | GSKalchev18@codingburgas.bg
 Anton Slavov | 10V | Scrum-Trainer | ASSlavov18@codingburgas.bg

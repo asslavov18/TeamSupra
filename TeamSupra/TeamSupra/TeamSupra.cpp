@@ -13,19 +13,45 @@ void showMenuOptions()
     system("cls");
     cout << "------------WELCOME TO TEAM SUPRA'S PROJECT------------" << endl;
     cout << "||                                                   ||" << endl;
+    cout << "||   1. Student menu                                 ||" << endl;
+    cout << "||   2. Teacher menu                                 ||" << endl;
+    cout << "||   3. Team menu                                    ||" << endl;
+    cout << "||   0. Leave the program                            ||" << endl;
+    cout << "||___________________________________________________||" << endl;
+}
+
+void showStudentMenu()
+{
+    system("cls");
+    cout << "----------------WELCOME TO STUDENT MENU----------------" << endl;
+    cout << "||                                                   ||" << endl;
     cout << "||   1. Add a student                                ||" << endl;
     cout << "||   2. Remove a student                             ||" << endl;
     cout << "||   3. Remove student from StudentFile              ||" << endl;
     cout << "||   4. Show all students                            ||" << endl;
     cout << "||   5. Show all students from StudentFile           ||" << endl;
-    cout << "||   6. Add a team                                   ||" << endl;
-    cout << "||   7. Add a teacher                                ||" << endl;
-    cout << "||   8. Show all Teachers                            ||" << endl;
-    cout << "||   9. Delete Teacher                               ||" << endl;
-    cout << "||   0. Leave the program                            ||" << endl;
-    cout << "||___________________________________________________||" << endl;
+    cout << "||___________________________________________________||\n" << endl;
 }
 
+void showTeacherMenu()
+{
+    system("cls");
+    cout << "----------------WELCOME TO TEACHER MENU----------------" << endl;
+    cout << "||                                                   ||" << endl;
+    cout << "||   1. Add a teacher                                ||" << endl;
+    cout << "||   2. Sholl all teachers                           ||" << endl;
+    cout << "||   3. Remove teacher from TeacherFile              ||" << endl;
+    cout << "||___________________________________________________||\n" << endl;
+}
+
+void showTeamMenu()
+{
+    system("cls");
+    cout << "------------------WELCOME TO TEAM MENU-----------------" << endl;
+    cout << "||                                                   ||" << endl;
+    cout << "||   1. Add a Team                                   ||" << endl;
+    cout << "||___________________________________________________||\n" << endl;
+}
 
 bool Menu()
 {
@@ -33,69 +59,38 @@ bool Menu()
     showMenuOptions();
     cout << "\nSelect an option: ";
     cin >> choice;
+
     //We call the corresponding function for the choice
-    if (choice == 1)
-    {
-        system("cls");
-        addStudent();
-    }
-    else if (choice == 2)
-    {
-        system("cls");
-        removeStudentByEmail();
-    }
-    else if (choice == 3)
-    {
-        system("cls");
-        deleteLineFromStudentFile();
-        pressAnyKey();
-    }
-    else if (choice == 4)
-    {
-        system("cls");
-        showAllStudents();
-        pressAnyKey();
-    }
 
-    else if (choice == 5)
+    switch (choice)
     {
-        system("cls");
-        ReadFromStudentFile();
-        pressAnyKey();
-    }
+    case 1:
+        system("cls"); 
+        showStudentMenu();
+        StudentMenuOptions();
+        break;
 
-    else if (choice == 6)
-    {
-        system("cls");
-        addTeam();
-    }
-    else if (choice == 7)
-    {
-        system("cls");
-        addTeacher();
-    }
-    else if (choice == 8)
-    {
-        system("cls");
-        ReadFromTeacherFile();
-        pressAnyKey();
-    }
-    else if (choice == 9)
-    {
-        system("cls");
-        deleteLineFromTeacherFile();
-        pressAnyKey();
-    }
-    else if (choice == 0)
-    {
-        cout << "Have a nice day." << endl;
+    case 2:
+        system("cls"); 
+        showTeacherMenu();
+        TeacherMenuOptions();
+        break;
+
+    case 3:
+        system("cls"); 
+        showTeamMenu();
+        TeamsMenuOptions();
+        break;
+
+    case 0:
+        cout << "\nHave a nice day." << endl;
         return false;
-    }
-    else
-    {
-        cout << "Input a valid choice!" << endl;
-    }
+        break;
 
+    default: 
+        cout << "Input a valid choice!" << endl; 
+        break;
+    }
     //If the choice is not 0 or invalid the Menu function is called again
     return true;
 }
