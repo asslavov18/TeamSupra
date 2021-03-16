@@ -198,6 +198,51 @@ void deleteLineFromStudentFile()
     // rename the file 
     rename("temp.txt", file_name);
 
-    cout << "Deletion successful, file after deletion : " << endl;
+    cout << "Deletion successful, file after deletion :\n " << endl;
     ReadFromStudentFile();
+}
+
+void deleteLineFromTeacherFile()
+{
+    int n;
+    const char* file_name = ("TeachersFile.txt");
+    ifstream is(file_name);
+    ofstream ofs;
+
+    ReadFromTeacherFile();
+
+    cout << endl;
+    cout << "Enter line of the teacher you want to delete : ";
+    cin >> n;
+    cout << endl;
+
+    ofs.open("temp.txt", ios::out);
+
+    char c;
+    int lineNum = 1;
+    while (is.get(c))
+    {
+        // if a newline character 
+        if (c == '\n')
+        {
+            lineNum++;
+        }
+
+        // file content not to be deleted 
+        if (lineNum != n)
+        {
+            ofs << c;
+        }
+    }
+
+    ofs.close();
+    is.close();
+
+    // remove the original file 
+    remove(file_name);
+    // rename the file 
+    rename("temp.txt", file_name);
+
+    cout << "Deletion successful, file after deletion :\n " << endl;
+    ReadFromTeacherFile();
 }

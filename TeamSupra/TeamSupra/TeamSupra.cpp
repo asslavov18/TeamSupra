@@ -22,6 +22,7 @@ void showMenuOptions()
     cout << "||   6. Add a team                                   ||" << endl;
     cout << "||   7. Add a teacher                                ||" << endl;
     cout << "||   8. Show all Teachers                            ||" << endl;
+    cout << "||   9. Delete Teacher                               ||" << endl;
     cout << "||   0. Leave the program                            ||" << endl;
     cout << "||___________________________________________________||" << endl;
 }
@@ -77,6 +78,12 @@ bool Menu()
     {
         system("cls");
         ReadFromTeacherFile();
+        pressAnyKey();
+    }
+    else if (choice == 9)
+    {
+        system("cls");
+        deleteLineFromTeacherFile();
         pressAnyKey();
     }
     else if (choice == 0)
