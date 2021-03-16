@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <fstream>
 #include <iostream>
+#include <vector>
 #include "DataTypes.h"
 
 using namespace std;
@@ -86,11 +87,19 @@ void removeStudentByEmail()
 
 void showAllTeamNames()
 {
-    cout << "Current available teams:\n\n";
-    for (size_t i = 0; i < teams.size(); i++)
+    if (teams.size())
     {
-        cout <<"Team name: "<< teams[i].name << endl;
+        cout << "Names of avaible teams:\n";
+        for (size_t i = 0; i < teams.size(); i++)
+        {
+            cout << "-" << teams[i].name << endl;
+        }
     }
+    else
+    {
+        cout << "No teams to show" << endl;
+    }
+  
 }
 
 void showAllTeams()
@@ -114,6 +123,30 @@ void showAllTeams()
         }
         cout << "_________________________________________\n" << endl;
     }
+}
+
+void removeTeamByName()
+{
+    bool found = 0;
+    string teamName;
+    showAllTeamNames();
+    cout << endl;
+    while (!found)
+    {
+        cout << "Enter the name of the team you want to remove:";
+        cin >> teamName;
+        for (size_t i = 0; i < teams.size(); i++)
+        {
+            if (teams[i].name == teamName)
+            {
+                teams.erase(teams.begin()+i);
+                found = 1;
+                break;
+            }
+        }
+        if(found==0) cout << "Enter an existing team name! \n \n";
+    }
+    cout << "Successfully removed team" << endl;
 }
 
 vector<TEAM> searchTeamsByNames()
@@ -375,7 +408,7 @@ void TeamsMenuOptions()
 
     case 3:
         system("cls");
-
+        removeTeamByName();
         pressAnyKey();
         break;
 

@@ -39,7 +39,7 @@ bool Menu()
         break;
 
     case 0:
-        cout << "\n Have a nice day!" << endl;
+        cout << "\nHave a nice day!" << endl;
         return false;
         break;
 
