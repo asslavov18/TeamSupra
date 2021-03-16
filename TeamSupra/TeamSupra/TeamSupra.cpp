@@ -44,7 +44,8 @@ bool Menu()
         break;
 
     default: 
-        cout << "Input a valid choice!" << endl; 
+        cout << "Input a valid choice!" << endl;
+        pressAnyKey();
         break;
     }
 

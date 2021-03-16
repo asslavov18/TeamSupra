@@ -350,6 +350,7 @@ void StudentMenuOptions()
 
     default:
         cout << "Input a valid choice!" << endl;
+        pressAnyKey();
         break;
     }
 }
@@ -383,6 +384,7 @@ void TeacherMenuOptions()
 
     default:
         cout << "Input a valid choice!" << endl;
+        pressAnyKey();
         break;
     }
 }
@@ -414,6 +416,7 @@ void TeamsMenuOptions()
 
     default:
         cout << "Input a valid choice!" << endl;
+        pressAnyKey();
         break;
     }
 }
