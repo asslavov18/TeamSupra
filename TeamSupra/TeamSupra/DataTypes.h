@@ -37,6 +37,7 @@ struct TEAM
     string date;
     string status;
     vector<STUDENT> members;
+
     void askForData();
 };
 
@@ -58,6 +59,7 @@ struct TEACHER
     string surname;
     string email;
     vector<TEAM> taughtTeams;
+
     void askForData();
     void AddTeacherToFile();
 };

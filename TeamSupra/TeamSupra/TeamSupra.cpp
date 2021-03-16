@@ -5,6 +5,7 @@
 #include "DataTypes.h"
 #include "Methods.h"
 #include "ChangingDataFunctions.h"
+
 using namespace std;
 
 void showMenuOptions()
@@ -91,13 +92,16 @@ bool Menu()
         cout << "Input a valid choice!" << endl; 
         break;
     }
+
     //If the choice is not 0 or invalid the Menu function is called again
+
     return true;
 }
 
 int main()
 {
     //We leave the while only when 0 is entered and false is returned
+
     while (Menu())
     {
         ;

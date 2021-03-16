@@ -3,8 +3,8 @@
 #include <fstream>
 #include<iostream>
 #include "DataTypes.h"
-using namespace std;
 
+using namespace std;
 
 void pressAnyKey()
 {
@@ -260,26 +260,31 @@ void StudentMenuOptions()
         system("cls");
         addStudent();
         break;
+
     case 2:
         system("cls");
         removeStudentByEmail();
         break;
+
     case 3:
         system("cls");
         deleteLineFromStudentFile();
         pressAnyKey();
         break;
+
     case 4:
         system("cls");
         showAllStudents();
         pressAnyKey();
         break;
+
     case 5:
         system("cls");
         cout << "List of Students:\n";
         ReadFromStudentFile();
         pressAnyKey();
         break;
+
     default:
         cout << "Input a valid choice!" << endl;
         break;
@@ -299,16 +304,19 @@ void TeacherMenuOptions()
         addTeacher();
         break;
     case 2:
+
         system("cls");
         cout << "List of Teacher:\n";
         ReadFromTeacherFile();
         pressAnyKey();
         break;
+
     case 3:
         system("cls");
         deleteLineFromTeacherFile();
         pressAnyKey();
         break;
+
     default:
         cout << "Input a valid choice!" << endl;
         break;

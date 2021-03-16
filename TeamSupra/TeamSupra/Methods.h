@@ -4,8 +4,11 @@
 #include <fstream>
 #include"DataTypes.h"
 #include"ChangingDataFunctions.h"
+
 using namespace std;
+
 //used to fill a STUDENT variable with data
+
 void STUDENT::askForData()
 {
     cout << "Input name: ";
@@ -19,6 +22,7 @@ void STUDENT::askForData()
     cout << "Input email: ";
     cin >> email;
     id = students[students.size() - 1].id + 1;
+
     AddStudentToFile();
 }
 
@@ -44,8 +48,10 @@ void TEAM::askForData()
     cin >> date;
     showAllStudents();
     cout << "Which students do you want to add in your team(by id) enter -1 to stop: ";
+
     //we need to be cautious of the user entering a single id
     //more than one time
+
     int id = 0, used[100] = { 0 };
     while (id != -1)
     {
@@ -67,6 +73,7 @@ void TEACHER::askForData()
     cin >> surname;
     cout << "Input email: ";
     cin >> email;
+
     AddTeacherToFile();
     taughtTeams = searchTeamsByNames();
 }
