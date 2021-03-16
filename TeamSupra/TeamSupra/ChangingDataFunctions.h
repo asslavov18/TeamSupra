@@ -93,6 +93,23 @@ void showAllTeamNames()
     }
 }
 
+void showAllTeams()
+{
+    cout << "Current available teams:\n\n";
+    for (size_t i = 0; i < teams.size(); i++)
+    {
+        cout << "Team name: " << teams[i].name << endl;
+        cout << "Description: " << teams[i].description << endl;
+        cout << "Date of setup: " << teams[i].date << endl;
+        cout << "Status: " << teams[i].status << endl;
+        cout << "Members: " << endl;
+        for (size_t j = 0; j < teams[i].members.size(); j++)
+        {
+            teams[i].members[j].showStudent();
+        }
+    }
+}
+
 vector<TEAM> searchTeamsByNames()
 {
     vector<TEAM> foundTeams;
@@ -254,6 +271,7 @@ void deleteLineFromTeacherFile()
 }
 
 
+
 void StudentMenuOptions()
 {
     int choice;
@@ -345,7 +363,7 @@ void TeamsMenuOptions()
     case 2:
 
         system("cls");
-        showAllTeamNames();
+        showAllTeams();
         pressAnyKey();
         break;
 

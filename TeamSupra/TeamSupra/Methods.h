@@ -27,6 +27,14 @@ void STUDENT::askForData()
     addStudentToFile();
 }
 
+void STUDENT::showStudent()
+{
+    cout << "Name: " << name << " " << surname << endl;
+    cout << "Grade:" << schoolClass << endl;
+    cout << "Role:" << role << endl;
+    cout << "Email:" << email << endl;
+}
+
 void STUDENT::addStudentToFile()
 {
     ofstream outputFile;
@@ -50,9 +58,9 @@ void TEAM::askForData()
     //cin.ignore();
     cout << "Input date of setup: ";
     cin >> date;
+    status = "In use";
     showAllStudents();
     cout << "Which students do you want to add in your team(by id) enter -1 to stop: ";
-
     //we need to be cautious of the user entering a single id
     //more than one time
     bool valid;

@@ -16,6 +16,7 @@ struct STUDENT
     string email;
 
     void askForData();
+    void showStudent();
     void addStudentToFile();
 };
 
