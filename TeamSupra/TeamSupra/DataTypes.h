@@ -30,7 +30,6 @@ vector<STUDENT> students = {
 };;
 
 
-
 struct TEAM
 {
     string name;
@@ -40,7 +39,6 @@ struct TEAM
     vector<STUDENT> members;
     void askForData();
 };
-
 
 
 vector<TEAM> teams = {
@@ -54,7 +52,6 @@ vector<TEAM> teams = {
 } };
 
 
-
 struct TEACHER
 {
     string name;
@@ -65,7 +62,6 @@ struct TEACHER
     void AddTeacherToFile();
 };
 vector<TEACHER> teachers;
-
 
 
 struct SCHOOL

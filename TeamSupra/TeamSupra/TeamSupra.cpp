@@ -12,7 +12,6 @@ void showMenuOptions()
     //clears the console
     system("cls");
     cout << "------------WELCOME TO TEAM SUPRA'S PROJECT------------" << endl;
-    cout << "||   Select an option:                               ||" << endl;
     cout << "||                                                   ||" << endl;
     cout << "||   1. Add a student                                ||" << endl;
     cout << "||   2. Remove a student                             ||" << endl;
@@ -32,6 +31,7 @@ bool Menu()
 {
     int choice;
     showMenuOptions();
+    cout << "\nSelect an option: ";
     cin >> choice;
     //We call the corresponding function for the choice
     if (choice == 1)
@@ -95,6 +95,7 @@ bool Menu()
     {
         cout << "Input a valid choice!" << endl;
     }
+
     //If the choice is not 0 or invalid the Menu function is called again
     return true;
 }
