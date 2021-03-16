@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Menus.cpp" />
     <ClCompile Include="TeamSupra.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChangingDataFunctions.h" />
     <ClInclude Include="DataTypes.h" />
+    <ClInclude Include="Menus.h" />
     <ClInclude Include="Methods.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

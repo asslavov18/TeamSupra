@@ -1,9 +1,9 @@
 #pragma once
-#include<iostream>
-#include<conio.h>
+#include <iostream>
+#include <conio.h>
 #include <fstream>
-#include"DataTypes.h"
-#include"ChangingDataFunctions.h"
+#include "DataTypes.h"
+#include "ChangingDataFunctions.h"
 
 using namespace std;
 

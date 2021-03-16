@@ -18,6 +18,9 @@
     <ClCompile Include="TeamSupra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Menus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataTypes.h">
@@ -27,6 +30,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Methods.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

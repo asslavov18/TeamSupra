@@ -1,7 +1,7 @@
 #pragma once
-#include<string>
-#include<vector>
-#include<conio.h>
+#include <string>
+#include <vector>
+#include <conio.h>
 #include <fstream>
 
 using namespace std;
