@@ -16,7 +16,7 @@ struct STUDENT
     string email;
 
     void askForData();
-    void AddStudentToFile();
+    void addStudentToFile();
 };
 
 
@@ -63,7 +63,7 @@ struct TEACHER
     vector<TEAM> taughtTeams;
 
     void askForData();
-    void AddTeacherToFile();
+    void addTeacherToFile();
 };
 vector<TEACHER> teachers;
 

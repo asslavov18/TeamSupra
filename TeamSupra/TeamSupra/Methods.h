@@ -18,18 +18,20 @@ void STUDENT::askForData()
     cout << "Input schoolClass: ";
     cin >> schoolClass;
     cout << "Input role: ";
-    cin >> role;
+    cin.ignore();
+    getline(cin, role);
     cout << "Input email: ";
     cin >> email;
     id = students[students.size() - 1].id + 1;
 
-    AddStudentToFile();
+    addStudentToFile();
 }
 
-void STUDENT::AddStudentToFile()
+void STUDENT::addStudentToFile()
 {
     ofstream outputFile;
-    outputFile.open("StudentsFile.txt", ios::app); //using ios::app to not overwtite the iformation
+    //using ios::app to not overwtite the information
+    outputFile.open("StudentsFile.txt", ios::app); 
 
     if (outputFile.is_open())
     {
@@ -43,7 +45,9 @@ void TEAM::askForData()
     cout << "Input team name: ";
     cin >> name;
     cout << "Input description: ";
-    cin >> description;
+    cin.ignore();
+    getline(cin, description);
+    //cin.ignore();
     cout << "Input date of setup: ";
     cin >> date;
     showAllStudents();
@@ -51,11 +55,18 @@ void TEAM::askForData()
 
     //we need to be cautious of the user entering a single id
     //more than one time
-
+    bool valid;
     int id = 0, used[100] = { 0 };
     while (id != -1)
     {
         cin >> id;
+        valid=checkValidId(id);
+        if (!valid)
+        {
+            cout << "Enter valid id!" << endl;
+            continue;
+        }
+
         if (used[id] == 0)
         {
             members.push_back(students[id]);
@@ -74,11 +85,11 @@ void TEACHER::askForData()
     cout << "Input email: ";
     cin >> email;
 
-    AddTeacherToFile();
+    addTeacherToFile();
     taughtTeams = searchTeamsByNames();
 }
 
-void TEACHER::AddTeacherToFile()
+void TEACHER::addTeacherToFile()
 {
     ofstream outputFile;
     outputFile.open("TeachersFile.txt", ios::app); //using ios::app to not overwtite the iformation

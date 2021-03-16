@@ -158,6 +158,11 @@ void ReadFromTeacherFile()
     readFile.close();
 }
 
+bool checkValidId(int id)
+{
+    return (id >= 0 && id <= students[students.size() - 1].id);
+}
+
 void deleteLineFromStudentFile()
 {
     int n;
@@ -308,7 +313,7 @@ void TeacherMenuOptions()
     case 2:
 
         system("cls");
-        cout << "List of Teacher:\n";
+        cout << "List of Teachers:\n";
         ReadFromTeacherFile();
         pressAnyKey();
         break;
