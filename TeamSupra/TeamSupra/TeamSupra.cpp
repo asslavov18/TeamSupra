@@ -40,8 +40,8 @@ void showTeacherMenu()
     cout << "----------------WELCOME TO TEACHER MENU----------------" << endl;
     cout << "||                                                   ||" << endl;
     cout << "||   1. Add a teacher                                ||" << endl;
-    cout << "||   2. Show all teachers                           ||" << endl;
-    cout << "||   3. Remove teacher from TeacherFile              ||" << endl;
+    cout << "||   2. Show all teachers                            ||" << endl;
+    cout << "||   3. Remove teacher                               ||" << endl;
     cout << "||___________________________________________________||\n" << endl;
 }
 

@@ -86,9 +86,10 @@ void removeStudentByEmail()
 
 void showAllTeamNames()
 {
+    cout << "Current available teams:\n\n";
     for (size_t i = 0; i < teams.size(); i++)
     {
-        cout << teams[i].name << endl;
+        cout <<"Team name: "<< teams[i].name << endl;
     }
 }
 
@@ -198,7 +199,7 @@ void deleteLineFromStudentFile()
     // rename the file 
     rename("temp.txt", file_name);
 
-    cout << "Deletion successful, file after deletion :\n " << endl;
+    cout << "File after deletion :\n " << endl;
     ReadFromStudentFile();
 }
 
@@ -243,7 +244,7 @@ void deleteLineFromTeacherFile()
     // rename the file 
     rename("temp.txt", file_name);
 
-    cout << "Deletion successful, file after deletion :\n " << endl;
+    cout << "File after deletion :\n " << endl;
     ReadFromTeacherFile();
 }
 
@@ -339,7 +340,7 @@ void TeamsMenuOptions()
     case 2:
 
         system("cls");
-
+        showAllTeamNames();
         pressAnyKey();
         break;
 
