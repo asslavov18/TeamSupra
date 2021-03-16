@@ -29,10 +29,10 @@ void STUDENT::askForData()
 
 void STUDENT::showStudent()
 {
-    cout << "Name: " << name << " " << surname << endl;
-    cout << "Grade:" << schoolClass << endl;
-    cout << "Role:" << role << endl;
-    cout << "Email:" << email << endl;
+    cout << "  Name: " << name << " " << surname << endl;
+    cout << "  Grade: " << schoolClass << endl;
+    cout << "  Role: " << role << endl;
+    cout << "  Email: " << email << endl;
 }
 
 void STUDENT::addStudentToFile()
