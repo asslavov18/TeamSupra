@@ -30,6 +30,7 @@ vector<STUDENT> students = {
 {4, "Herman", "Howell", "9A", "scrum master", "hermhowell@outlook.com" },
 {5, "Harriet", "Mccoy", "12V", "front end", "harrmccoy@gmail.com" },
 {6, "Angelina", "Cook", "10B", "back end", "angecook@outlook.com" },
+{7, "Jackie", "White", "12A", "qa", "jwhite@outlook.com" },
 };;
 
 

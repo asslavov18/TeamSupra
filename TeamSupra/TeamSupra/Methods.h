@@ -55,12 +55,12 @@ void TEAM::askForData()
     cout << "Input description: ";
     cin.ignore();
     getline(cin, description);
-    //cin.ignore();
     cout << "Input date of setup: ";
     cin >> date;
     status = "In use";
     showAllStudents();
     cout << "Which students do you want to add in your team(by id) enter -1 to stop: ";
+    
     //we need to be cautious of the user entering a single id
     //more than one time
     bool valid;
@@ -69,7 +69,7 @@ void TEAM::askForData()
     {
         cin >> id;
         valid=checkValidId(id);
-        if (!valid)
+        if (!valid&&id!=-1)
         {
             cout << "Enter valid id!" << endl;
             continue;

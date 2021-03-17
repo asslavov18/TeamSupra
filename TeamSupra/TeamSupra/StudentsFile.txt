@@ -1,7 +1,8 @@
-Michael Watts | 10V | front-end | michawatts@gmail.com
-Zachary Dennis | 12B | back-end | zachdennis@hotmail.com
+Michael Watts | 10V | front end | michawatts@gmail.com
+Zachary Dennis | 12B | back end | zachdennis@hotmail.com
 Kawhi Leonard | 11A | scrum master | kawhleonard@yahoo.com
 Susan Hamilton | 11G | qa | susahamilton@outlook.com
 Herman Howell | 9A | scrum master | hermhowell@outlook.com
-Harriet Mccoy | 12V | front-end | harrmccoy@gmail.com
-Angelina Cook | 10B | back-end | angecook@outlook.com
+Harriet Mccoy | 12V | front end | harrmccoy@gmail.com
+Angelina Cook | 10B | back end | angecook@outlook.com
+Jackie White | 12A | back end | jwhite@outlook.com

@@ -400,6 +400,7 @@ void TeamsMenuOptions()
     case 1:
         system("cls");
         addTeam();
+        pressAnyKey();
         break;
     case 2:
 
